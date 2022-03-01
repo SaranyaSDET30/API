@@ -1,0 +1,281 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "data": {
+                "Job Title": {
+                    "0": "SDET"
+                },
+                "Job Company Name": {
+                    "0": "Signature Consultants"
+                },
+                "Job Location": {
+                    "0": "Vinings, GA, USA"
+                },
+                "Job Type": {
+                    "0": "Contract"
+                },
+                "Job Posted time": {
+                    "0": "44 minutes ago"
+                },
+                "Job Description": {
+                    "0": "Job Summary: Signature Consultants is seeking a Software Developer in Test (SDET) for an opportunity with a client located in Vinings, GA. Qualifications: Resources required for Quality assurance engineering Ability to automate any processes and functions Experience in standing up the automation from scratch Experience in writing file validation frameworks Expertise in the API and Database automation Expertise in writing Web automation framework Experience in the process automation Expertise"
+                },
+                "Job Id": {
+                    "0": "1001"
+                }
+            }
+        }
+    ],
+    "required": [
+        "data"
+    ],
+    "properties": {
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "Job Title": {
+                        "0": "SDET"
+                    },
+                    "Job Company Name": {
+                        "0": "Signature Consultants"
+                    },
+                    "Job Location": {
+                        "0": "Vinings, GA, USA"
+                    },
+                    "Job Type": {
+                        "0": "Contract"
+                    },
+                    "Job Posted time": {
+                        "0": "44 minutes ago"
+                    },
+                    "Job Description": {
+                        "0": "Job Summary: Signature Consultants is seeking a Software Developer in Test (SDET) for an opportunity with a client located in Vinings, GA. Qualifications: Resources required for Quality assurance engineering Ability to automate any processes and functions Experience in standing up the automation from scratch Experience in writing file validation frameworks Expertise in the API and Database automation Expertise in writing Web automation framework Experience in the process automation Expertise"
+                    },
+                    "Job Id": {
+                        "0": "1001"
+                    }
+                }
+            ],
+            "required": [
+                "Job Title",
+                "Job Company Name",
+                "Job Location",
+                "Job Type",
+                "Job Posted time",
+                "Job Description",
+                "Job Id"
+            ],
+            "properties": {
+                "Job Title": {
+                    "$id": "#/properties/data/properties/Job%20Title",
+                    "type": "object",
+                    "title": "The Job Title schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "0": "SDET"
+                        }
+                    ],
+                    "required": [
+                        "0"
+                    ],
+                    "properties": {
+                        "0": {
+                            "$id": "#/properties/data/properties/Job%20Title/properties/0",
+                            "type": "string",
+                            "title": "The 0 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SDET"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Job Company Name": {
+                    "$id": "#/properties/data/properties/Job%20Company%20Name",
+                    "type": "object",
+                    "title": "The Job Company Name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "0": "Signature Consultants"
+                        }
+                    ],
+                    "required": [
+                        "0"
+                    ],
+                    "properties": {
+                        "0": {
+                            "$id": "#/properties/data/properties/Job%20Company%20Name/properties/0",
+                            "type": "string",
+                            "title": "The 0 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Signature Consultants"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Job Location": {
+                    "$id": "#/properties/data/properties/Job%20Location",
+                    "type": "object",
+                    "title": "The Job Location schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "0": "Vinings, GA, USA"
+                        }
+                    ],
+                    "required": [
+                        "0"
+                    ],
+                    "properties": {
+                        "0": {
+                            "$id": "#/properties/data/properties/Job%20Location/properties/0",
+                            "type": "string",
+                            "title": "The 0 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Vinings, GA, USA"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Job Type": {
+                    "$id": "#/properties/data/properties/Job%20Type",
+                    "type": "object",
+                    "title": "The Job Type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "0": "Contract"
+                        }
+                    ],
+                    "required": [
+                        "0"
+                    ],
+                    "properties": {
+                        "0": {
+                            "$id": "#/properties/data/properties/Job%20Type/properties/0",
+                            "type": "string",
+                            "title": "The 0 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Contract"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Job Posted time": {
+                    "$id": "#/properties/data/properties/Job%20Posted%20time",
+                    "type": "object",
+                    "title": "The Job Posted time schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "0": "44 minutes ago"
+                        }
+                    ],
+                    "required": [
+                        "0"
+                    ],
+                    "properties": {
+                        "0": {
+                            "$id": "#/properties/data/properties/Job%20Posted%20time/properties/0",
+                            "type": "string",
+                            "title": "The 0 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "44 minutes ago"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Job Description": {
+                    "$id": "#/properties/data/properties/Job%20Description",
+                    "type": "object",
+                    "title": "The Job Description schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "0": "Job Summary: Signature Consultants is seeking a Software Developer in Test (SDET) for an opportunity with a client located in Vinings, GA. Qualifications: Resources required for Quality assurance engineering Ability to automate any processes and functions Experience in standing up the automation from scratch Experience in writing file validation frameworks Expertise in the API and Database automation Expertise in writing Web automation framework Experience in the process automation Expertise"
+                        }
+                    ],
+                    "required": [
+                        "0"
+                    ],
+                    "properties": {
+                        "0": {
+                            "$id": "#/properties/data/properties/Job%20Description/properties/0",
+                            "type": "string",
+                            "title": "The 0 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Job Summary: Signature Consultants is seeking a Software Developer in Test (SDET) for an opportunity with a client located in Vinings, GA. Qualifications: Resources required for Quality assurance engineering Ability to automate any processes and functions Experience in standing up the automation from scratch Experience in writing file validation frameworks Expertise in the API and Database automation Expertise in writing Web automation framework Experience in the process automation Expertise"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Job Id": {
+                    "$id": "#/properties/data/properties/Job%20Id",
+                    "type": "object",
+                    "title": "The Job Id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "0": "1001"
+                        }
+                    ],
+                    "required": [
+                        "0"
+                    ],
+                    "properties": {
+                        "0": {
+                            "$id": "#/properties/data/properties/Job%20Id/properties/0",
+                            "type": "string",
+                            "title": "The 0 schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1001"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

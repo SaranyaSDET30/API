@@ -1,0 +1,594 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>54/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 08 15:20:22 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20394 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: 5001, Automation Tester, London, Carezant, FullTime, 2 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+<tr>
+<td title='LMSAPI.postrequests.postprogram()'><b>postprogram</b><br>Test class: LMSAPI.postrequests<br>Parameters: 5005, Adobe Reader, Testing edited, TRUE<br/>
+<a href="#Output-1024266763" onClick='toggleBox("Output-1024266763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1024266763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1024266763">
+Get details from postprogram:5005<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.postrequests@35ef1869</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@2213854b<br/>
+<a href="#Output-2098578707" onClick='toggleBox("Output-2098578707", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2098578707" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2098578707">
+Delete details [Ljava.lang.String;@2213854b<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='LMSAPI.postrequests.postprogram()'><b>postprogram</b><br>Test class: LMSAPI.postrequests<br>Parameters: 5006, Cucumber, Testing edited, TRUE<br/>
+<a href="#Output-721536649" onClick='toggleBox("Output-721536649", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-721536649" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-721536649">
+Get details from postprogram:5006<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.postrequests@35ef1869</td></tr>
+<tr>
+<td title='LMSAPI.putrequests.putprogram()'><b>putprogram</b><br>Test class: LMSAPI.putrequests<br>Parameters: 5001, Java, Testing, false <br/>
+<a href="#Output-1980976027" onClick='toggleBox("Output-1980976027", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1980976027" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1980976027">
+update program details:Java<br/>
+ProgramId received from Response 5001<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.putrequests@c33b74f</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: 5001, QA Analyst, London, Carezant, FullTime, 2 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: 5002, Automation Tester, Germany, Carezant, FullTime, 3 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+<tr>
+<td title='LMSAPI.postrequests.postprogram()'><b>postprogram</b><br>Test class: LMSAPI.postrequests<br>Parameters: 5003, Cypress, Testing edited, false <br/>
+<a href="#Output-438793128" onClick='toggleBox("Output-438793128", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-438793128" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-438793128">
+Get details from postprogram:5003<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.postrequests@35ef1869</td></tr>
+<tr>
+<td title='LMSAPI.deleterequests.test_delete()'><b>test_delete</b><br>Test class: LMSAPI.deleterequests<br>Parameters: [Ljava.lang.String;@492c8137<br/>
+<a href="#Output-1754096028" onClick='toggleBox("Output-1754096028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1754096028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1754096028">
+Delete details for program id[Ljava.lang.String;@492c8137<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.deleterequests@130161f7</td></tr>
+<tr>
+<td title='LMSAPI.deleterequests.test_delete()'><b>test_delete</b><br>Test class: LMSAPI.deleterequests<br>Parameters: [Ljava.lang.String;@7fd2a67a<br/>
+<a href="#Output-500450241" onClick='toggleBox("Output-500450241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-500450241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-500450241">
+Delete details for program id[Ljava.lang.String;@7fd2a67a<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.deleterequests@130161f7</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@2cc9a948<br/>
+<a href="#Output-408648902" onClick='toggleBox("Output-408648902", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-408648902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-408648902">
+Delete details [Ljava.lang.String;@2cc9a948<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.getProgramById()'><b>getProgramById</b><br>Test class: LMSAPI.getrequests<br>Parameters: [Ljava.lang.String;@73fbdf68<br/>
+<a href="#Output-926837661" onClick='toggleBox("Output-926837661", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-926837661" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-926837661">
+Get program details from programs Api for program id[Ljava.lang.String;@73fbdf68<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='LMSAPI.postrequests.postprogram()'><b>postprogram</b><br>Test class: LMSAPI.postrequests<br>Parameters: 5002, Csharp, Testing, TRUE<br/>
+<a href="#Output-1795135446" onClick='toggleBox("Output-1795135446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1795135446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1795135446">
+Get details from postprogram:5002<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.postrequests@35ef1869</td></tr>
+<tr>
+<td title='LMSAPI.deleterequests.test_delete()'><b>test_delete</b><br>Test class: LMSAPI.deleterequests<br>Parameters: [Ljava.lang.String;@35524549<br/>
+<a href="#Output-861255935" onClick='toggleBox("Output-861255935", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-861255935" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-861255935">
+Delete details for program id[Ljava.lang.String;@35524549<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.deleterequests@130161f7</td></tr>
+<tr>
+<td title='LMSAPI.deleterequests.test_delete()'><b>test_delete</b><br>Test class: LMSAPI.deleterequests<br>Parameters: [Ljava.lang.String;@32646ecf<br/>
+<a href="#Output-1551109210" onClick='toggleBox("Output-1551109210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1551109210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1551109210">
+Delete details for program id[Ljava.lang.String;@32646ecf<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.deleterequests@130161f7</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@14e93c46<br/>
+<a href="#Output-274059873" onClick='toggleBox("Output-274059873", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-274059873" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-274059873">
+Delete details [Ljava.lang.String;@14e93c46<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='LMSAPI.putrequests.putprogram()'><b>putprogram</b><br>Test class: LMSAPI.putrequests<br>Parameters: 5002, Csharp, Testing, TRUE<br/>
+<a href="#Output-1450133081" onClick='toggleBox("Output-1450133081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1450133081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1450133081">
+update program details:Csharp<br/>
+ProgramId received from Response 5002<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.putrequests@c33b74f</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@5f8d4b51<br/>
+<a href="#Output-756108583" onClick='toggleBox("Output-756108583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-756108583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-756108583">
+Delete details [Ljava.lang.String;@5f8d4b51<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.getProgramById()'><b>getProgramById</b><br>Test class: LMSAPI.getrequests<br>Parameters: [Ljava.lang.String;@65629ac6<br/>
+<a href="#Output-1615668218" onClick='toggleBox("Output-1615668218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1615668218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1615668218">
+Get program details from programs Api for program id[Ljava.lang.String;@65629ac6<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='LMSAPI.putrequests.putprogram()'><b>putprogram</b><br>Test class: LMSAPI.putrequests<br>Parameters: 5004, CoralDraw, Testing edited, TRUE<br/>
+<a href="#Output-566447096" onClick='toggleBox("Output-566447096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-566447096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-566447096">
+update program details:CoralDraw<br/>
+ProgramId received from Response 5004<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.putrequests@c33b74f</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.getProgramById()'><b>getProgramById</b><br>Test class: LMSAPI.getrequests<br>Parameters: [Ljava.lang.String;@1cc8416a<br/>
+<a href="#Output-1654300454" onClick='toggleBox("Output-1654300454", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1654300454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1654300454">
+Get program details from programs Api for program id[Ljava.lang.String;@1cc8416a<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: 0, QA Analyst, Canada, Carezant, FullTime, 7 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: null, QA Analyst, Norway, Carezant, FullTime, 8 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: siosl, Automation Tester, UK, Carezant, FullTime, 5 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.test_get1()'><b>test_get1</b><br>Test class: LMSAPI.getrequests</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: 0, Automation Tester, Canada, Carezant, FullTime, 7 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: 5000, QA Analyst, Chennai, Carezant, FullTime, 1 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: 5002, QA Analyst, Germany, Carezant, FullTime, 3 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='LMSAPI.putrequests.putprogram()'><b>putprogram</b><br>Test class: LMSAPI.putrequests<br>Parameters: 5006, Cucumber, Testing edited, TRUE<br/>
+<a href="#Output-1825112984" onClick='toggleBox("Output-1825112984", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1825112984" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1825112984">
+update program details:Cucumber<br/>
+ProgramId received from Response 5006<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.putrequests@c33b74f</td></tr>
+<tr>
+<td title='LMSAPI.postrequests.postprogram()'><b>postprogram</b><br>Test class: LMSAPI.postrequests<br>Parameters: 5000, Selenium, Testing, TRUE<br/>
+<a href="#Output-432914967" onClick='toggleBox("Output-432914967", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-432914967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-432914967">
+Get details from postprogram:5000<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.postrequests@35ef1869</td></tr>
+<tr>
+<td title='LMSAPI.putrequests.putprogram()'><b>putprogram</b><br>Test class: LMSAPI.putrequests<br>Parameters: 5005, Adobe Reader, Testing edited, TRUE<br/>
+<a href="#Output-1873010424" onClick='toggleBox("Output-1873010424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1873010424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1873010424">
+update program details:Adobe Reader<br/>
+ProgramId received from Response 5005<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.putrequests@c33b74f</td></tr>
+<tr>
+<td title='JobsAPI.getrequests.test_get1()'><b>test_get1</b><br>Test class: JobsAPI.getrequests</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.getrequests@2c767a52</td></tr>
+<tr>
+<td title='JobsAPI.getrequests.test_get()'><b>test_get</b><br>Test class: JobsAPI.getrequests</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.getrequests@2c767a52</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@28fef9a2<br/>
+<a href="#Output-246148341" onClick='toggleBox("Output-246148341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-246148341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-246148341">
+Delete details [Ljava.lang.String;@28fef9a2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: sfaio90, Automation Tester, Russia, Carezant, FullTime, 6 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@320efff5<br/>
+<a href="#Output-858760910" onClick='toggleBox("Output-858760910", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-858760910" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-858760910">
+Delete details [Ljava.lang.String;@320efff5<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: 5000, Automation Tester, Chennai, Carezant, FullTime, 1 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+<tr>
+<td title='LMSAPI.postrequests.postprogram()'><b>postprogram</b><br>Test class: LMSAPI.postrequests<br>Parameters: 5004, CoralDraw, Testing edited, TRUE<br/>
+<a href="#Output-558576687" onClick='toggleBox("Output-558576687", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-558576687" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-558576687">
+Get details from postprogram:5004<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.postrequests@35ef1869</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: 5003, QA Analyst, Spain, Carezant, FullTime, 4 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@2d758472<br/>
+<a href="#Output-484079038" onClick='toggleBox("Output-484079038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-484079038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-484079038">
+Delete details [Ljava.lang.String;@2d758472<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.getProgramById()'><b>getProgramById</b><br>Test class: LMSAPI.getrequests<br>Parameters: [Ljava.lang.String;@72758afa<br/>
+<a href="#Output-440815523" onClick='toggleBox("Output-440815523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-440815523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-440815523">
+Get program details from programs Api for program id[Ljava.lang.String;@72758afa<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='LMSAPI.putrequests.putprogram()'><b>putprogram</b><br>Test class: LMSAPI.putrequests<br>Parameters: 5003, Cypress, Testing edited, false <br/>
+<a href="#Output-1340995848" onClick='toggleBox("Output-1340995848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1340995848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1340995848">
+update program details:Cypress<br/>
+ProgramId received from Response 5003<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.putrequests@c33b74f</td></tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: null, Automation Tester, Norway, Carezant, FullTime, 8 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.getProgramById()'><b>getProgramById</b><br>Test class: LMSAPI.getrequests<br>Parameters: [Ljava.lang.String;@b791a81<br/>
+<a href="#Output-1215456927" onClick='toggleBox("Output-1215456927", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1215456927" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1215456927">
+Get program details from programs Api for program id[Ljava.lang.String;@b791a81<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='LMSAPI.postrequests.postprogram()'><b>postprogram</b><br>Test class: LMSAPI.postrequests<br>Parameters: 5001, Java, Testing, false <br/>
+<a href="#Output-490218" onClick='toggleBox("Output-490218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-490218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-490218">
+Get details from postprogram:5001<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.postrequests@35ef1869</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: sfaio90, QA Analyst, Russia, Carezant, FullTime, 6 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='JobsAPI.deleterequest.test_delete()'><b>test_delete</b><br>Test class: JobsAPI.deleterequest<br>Parameters: [Ljava.lang.String;@2093bb6c<br/>
+<a href="#Output-1613461828" onClick='toggleBox("Output-1613461828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1613461828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1613461828">
+Delete details [Ljava.lang.String;@2093bb6c<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.deleterequest@68999068</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.test_get2()'><b>test_get2</b><br>Test class: LMSAPI.getrequests</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='JobsAPI.putrequests.test_put()'><b>test_put</b><br>Test class: JobsAPI.putrequests<br>Parameters: siosl, QA Analyst, UK, Carezant, FullTime, 5 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.putrequests@708f5957</td></tr>
+<tr>
+<td title='LMSAPI.getrequests.getProgramById()'><b>getProgramById</b><br>Test class: LMSAPI.getrequests<br>Parameters: [Ljava.lang.String;@4215e133<br/>
+<a href="#Output-1193749715" onClick='toggleBox("Output-1193749715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1193749715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1193749715">
+Get program details from programs Api for program id[Ljava.lang.String;@4215e133<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.getrequests@31c88ec8</td></tr>
+<tr>
+<td title='LMSAPI.deleterequests.test_delete()'><b>test_delete</b><br>Test class: LMSAPI.deleterequests<br>Parameters: [Ljava.lang.String;@2aafa84f<br/>
+<a href="#Output-1406696237" onClick='toggleBox("Output-1406696237", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1406696237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1406696237">
+Delete details for program id[Ljava.lang.String;@2aafa84f<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.deleterequests@130161f7</td></tr>
+<tr>
+<td title='LMSAPI.putrequests.putprogram()'><b>putprogram</b><br>Test class: LMSAPI.putrequests<br>Parameters: 5000, Selenium, Testing, TRUE<br/>
+<a href="#Output-1682050612" onClick='toggleBox("Output-1682050612", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1682050612" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1682050612">
+update program details:Selenium<br/>
+ProgramId received from Response 5000<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.putrequests@c33b74f</td></tr>
+<tr>
+<td title='LMSAPI.deleterequests.test_delete()'><b>test_delete</b><br>Test class: LMSAPI.deleterequests<br>Parameters: [Ljava.lang.String;@647ff23e<br/>
+<a href="#Output-1645449962" onClick='toggleBox("Output-1645449962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1645449962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1645449962">
+Delete details for program id[Ljava.lang.String;@647ff23e<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LMSAPI.deleterequests@130161f7</td></tr>
+<tr>
+<td title='JobsAPI.postrequests.test_post()'><b>test_post</b><br>Test class: JobsAPI.postrequests<br>Parameters: 5003, Automation Tester, Spain, Carezant, FullTime, 4 day, Good Automation Knowledge</td>
+<td></td>
+<td>0</td>
+<td>JobsAPI.postrequests@619713e5</td></tr>
+</table><p>
+</body>
+</html>

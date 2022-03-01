@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome1Element"
+    },
+    "definitions": {
+        "Welcome1Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "programId": {
+                    "type": "integer"
+                },
+                "programName": {
+                    "type": "string"
+                },
+                "programDescription": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "online": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "online",
+                "programDescription",
+                "programId",
+                "programName"
+            ],
+            "title": "Welcome1Element"
+        }
+    }
+}
